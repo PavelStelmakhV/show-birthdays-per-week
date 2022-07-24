@@ -15,7 +15,7 @@ def get_birthdays_per_week(users: list):
 
     for user in users:
 
-        # Формируем дату ДР, которое будет в ближайший год
+        # Формируем дату ДР, которая будет в ближайший год
         try:
             birthday_this_year = datetime(year=datetime.now().year, month=user['birthday'].month, day=user['birthday'].day)
             if birthday_this_year < current_datetime:
